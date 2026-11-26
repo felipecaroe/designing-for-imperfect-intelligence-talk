@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Guion · Designing for Imperfect Intelligence</title>
+<style>
+  :root { --bg:#17152b; --card:#211f3a; --fg:#f2e8d2; --mut:#a9a3c4; --acc:#ffa189; --line:#34315a; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--fg); font:400 17px/1.45 -apple-system, 'Helvetica Neue', Arial, sans-serif; padding:0 16px 60vh; }
+  header { position:sticky; top:0; z-index:5; background:var(--bg); padding:14px 0 12px; border-bottom:1px solid var(--line); }
+  header b { font-size:14px; letter-spacing:.06em; text-transform:uppercase; color:var(--mut); }
+  main { max-width:560px; margin:0 auto; }
+  h2 { font:700 13px/1 ui-monospace, Menlo, monospace; letter-spacing:.14em; text-transform:uppercase; color:var(--acc); margin:34px 0 10px; }
+  article { display:grid; grid-template-columns:54px 1fr; gap:4px 12px; padding:14px 12px; border-radius:10px; border:1px solid transparent; cursor:pointer; scroll-margin-top:70px; }
+  article + article { border-top-color:var(--line); border-radius:0; }
+  article.on { background:var(--card); border-color:var(--acc); border-radius:10px; }
+  .n { font:700 26px/1 ui-monospace, Menlo, monospace; color:var(--acc); grid-row:span 2; }
+  .n small { display:block; font-size:11px; color:var(--mut); margin-top:6px; letter-spacing:.04em; }
+  h3 { font-size:18px; font-weight:700; line-height:1.2; }
+  ul { list-style:none; display:grid; gap:5px; margin-top:6px; }
+  li { padding-left:14px; position:relative; }
+  li::before { content:''; position:absolute; left:0; top:.62em; width:6px; height:2px; background:var(--mut); }
+  li.q { font-weight:700; } li.q::before { background:var(--acc); height:6px; top:.5em; border-radius:50%; }
+  li.c { color:var(--mut); font-size:15px; }
+  .hint { color:var(--mut); font-size:13px; margin-top:10px; }
+</style>
+</head>
+<body>
+<main>
+<header><b>Guion · temas por diapositiva</b></header>
+<p class="hint">Clic en una diapositiva para marcarla. Flechas arriba y abajo mueven la marca. Los puntos rojos son frases para decir tal cual.</p>
+<div id="list"></div>
+</main>
+<script>
+/* id, hora, título, temas. Prefijo "!" = frase para decir tal cual. Prefijo "~" = acotación (ritmo, clics). */
+const D = [
+['# Apertura'],
+['cover','0:00','Portada',['!Vengo a enseñaros el trabajo de diseñar la propia IA.','~No expliques el dibujo. Vuelve al final.']],
+['personas','0:30','Para quien usa la IA',['Alguien abre un asistente desde el móvil por primera vez','Ante un fallo quiere saber qué ha pasado y qué puede hacer','!Lo primero que ve es la pantalla.']],
+['# 1 · Historia de la interfaz'],
+['ch1','1:00','Ya hemos estado aquí',['!Antes de hablar de cómo diseñamos eso, os llevo a 1968.','Así se hablaba con un ordenador: tecleando']],
+['h1','1:10','1968 · Engelbart',['~Baja el ritmo, es una historia','San Francisco, noventa minutos de demo','Ratón, ventanas, enlaces, dos personas en un mismo texto','Su pregunta era la nuestra: cómo se habla con una máquina']],
+['h2','2:30','De la demo al Macintosh',['Alto 1973, Star 1981 (fracasa), Macintosh 1984','Dieciséis años','Prototipos y pruebas con gente','Alguien decidió que un documento era un icono que se arrastra']],
+['mom','3:25','Mi madre podía usarlo',['Guardar un archivo y volver a encontrarlo','Si se equivocaba, lo veía y lo arreglaba','~Pausa después de «Con práctica»','La máquina dejó de ser cosa de especialistas']],
+['h3','4:00','Tres maneras de hablar con una máquina',['Nielsen, 2023: primer paradigma nuevo en sesenta años','Lotes: dejas el trabajo y vuelves','Comandos: le dices cómo, con teclado o con ratón','Intención: le dices qué y ella decide cómo','Cambia quién tiene el control']],
+['h3b','4:55','Esta vez nos toca a nosotros',['!Nos toca otra vez.','Somos la gente de Xerox PARC de este cambio','~Di la frase y para']],
+['# 2 · Diseñar con incertidumbre'],
+['ch2','5:10','Qué cambia y qué no',['Qué tiene de nuevo este material','Qué sigue igual que en 1968']],
+['x3','5:20','Diseño la experiencia de la propia IA',['~Di la frase y deja dos segundos','Qué ve la persona si tarda, si hay dudas o si la IA no puede hacer lo que se le pide']],
+['x4','5:50','Determinista / Probabilístico',['~Sin absolutos: hay ingenieros en la sala','Antes podía enumerar todos los estados y dibujarlos','Ahora una parte de la pantalla se escribe sola cada vez','!Pasamos de diseñar resultados a diseñar las condiciones en que ocurren.']],
+['x5','6:45','Cinco maneras de no ser perfecta',['Lenta: una tarea tarda más de lo previsto','Dudosa: una fuente no se puede comprobar','Variable: la misma pregunta recibe dos respuestas','Equivocada: una respuesta contiene un error','Incapaz: hay peticiones que el sistema no puede atender','!Casi todo lo que diseño ocurre en estas cinco palabras.']],
+['x6','7:30','Tres zonas de responsabilidad',['Controlamos (verde): estados, errores, permisos, lo que se conserva','Influimos (violeta): lo que solo podemos empujar','No predecimos (ámbar): lo que hay que encajar','Error típico: prometer en ámbar como si fuera verde','El contrario: dar por perdida la zona verde']],
+['hf','8:30','La máquina es nueva, la persona es la misma',['Hick, Fitts y Miller son de los años cincuenta','Atención, memoria y paciencia no han cambiado','Dos trabajos a la vez: el nuevo y el de siempre','~Enlaza con los métodos de diseño']],
+['# 3 · Métodos de diseño'],
+['ch3','9:40','Tres métodos',['!Tres herramientas, y ninguna la he inventado yo.']],
+['me2','9:50','Método 1 · Pre-mortem',['Gary Klein, psicólogo, 2007','«Ha pasado un año y esto ha sido un desastre. Escribid por qué»','Un modelo ayuda a explorar más fallos','Ejemplo hipotético: transcribir una nota de voz sin permiso de micrófono, con ruido o con un corte','!Uso la IA para imaginar los muchos resultados que una IA puede dar.']],
+['me1','11:15','Método 2 · AMFE',['!Los fallos que salen del pre-mortem van a una tabla.','Ingeniería de fiabilidad, 1949. La NASA la usó para ir a la Luna','Una columna cambiada: lo que vive la persona','Ejemplo: posibles fallos al generar una imagen','Si la interfaz promete algo, el producto tiene que poder cumplirlo']],
+['me3','12:25','Método 3 · Los golfos de Norman',['Dos distancias entre persona y máquina','Ida: cómo le digo lo que quiero','Vuelta: cómo sé lo que ha hecho y si era lo que quería','Cuarenta años de interfaz gráfica para la primera','La IA casi la cierra, y abre la segunda como nunca','La interfaz hace visible el estado y explica cómo seguir']],
+['m1','13:30','Dos oficios a la vez',['Uno: los fundamentos. Ninguna herramienta te los va a decir','Dos: el proceso nuevo, tabla y pre-mortem con un modelo','Tres: decidir qué comprueba el sistema, cuándo pide confirmación y qué queda fuera de su alcance']],
+['# 4 · La próxima interfaz'],
+['ch4','14:35','La próxima interfaz',['!Y esto está pasando ahora.']],
+['dv','14:45','Todo el mundo está buscando la forma',['Broche, colgante, gafas, anillo, llavero','Meta: un llavero para hablar con su agente','OpenAI y Jony Ive: se habla de un aparato sin pantalla','Algunos ya han fracasado, como el Star','!Estamos en 1975: las piezas están sobre la mesa y nadie ha hecho todavía el Macintosh.']],
+['fin','15:45','Estamos a punto de entregar la próxima interfaz',['Vuelve a 1968','No sabían que diseñaban los siguientes cuarenta años','Resolvían problemas concretos con gente delante','Cada espera, cada fallo con su salida, cada no bien dicho es una pieza','~Di la frase despacio','Es un momento buenísimo para dedicarse a esto']],
+['close','16:45','Gracias',['~La frase ya no está en pantalla: dila tú, despacio','!No siempre podemos diseñar lo que la IA va a responder, pero sí cómo lo vive la gente.','Gracias, QR, preguntas']],
+];
+const list = document.getElementById('list'), esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+let n = 0;
+list.innerHTML = D.map(d => {
+  if (d[0][0] === '#') return '<h2>' + esc(d[0].slice(2)) + '</h2>';
+  n++;
+  return '<article data-n="' + n + '" data-id="' + d[0] + '"><div class="n"><span>' + String(n).padStart(2, '0') + '</span><small>' + d[1] + '</small></div><h3>' + esc(d[2]) + '</h3><ul>' +
+    d[3].map(t => t[0] === '!' ? '<li class="q">' + esc(t.slice(1)) + '</li>' : t[0] === '~' ? '<li class="c">' + esc(t.slice(1)) + '</li>' : '<li>' + esc(t) + '</li>').join('') + '</ul></article>';
+}).join('');
+const arts = [...list.querySelectorAll('article')]; let cur = 0;
+function mark(i, scroll) { cur = Math.max(0, Math.min(arts.length - 1, i)); arts.forEach((a, k) => a.classList.toggle('on', k === cur)); if (scroll) arts[cur].scrollIntoView({ block: 'start', behavior: 'smooth' }); }
+arts.forEach((a, i) => a.addEventListener('click', () => mark(i)));
+addEventListener('keydown', e => { if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); mark(cur + 1, 1); } if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') { e.preventDefault(); mark(cur - 1, 1); } });
+mark(0);
+</script>
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Designing for Imperfect Intelligence · Felipe Caroé Amorim</title>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="deck.css">
+</head>
+<body>
+<div class="deck"><div class="stage" id="stage">
+
+<!-- 01 -->
+<section class="slide " id="cover">
+  <h1 lang="en"><span>Designing</span><span>for Imperfect</span><span>Intelligence</span></h1>
+<svg class="branch ill" viewBox="-10 20 450 270" fill="none"><defs><pattern id="bd1" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="4.0" cy="4.0" r="1.7" fill="#ffd9a0"/><animateTransform attributeName="patternTransform" type="translate" from="0 0" to="8 8" dur="0.7s" repeatCount="indefinite"/></pattern></defs><circle cx="165" cy="150" r="112" fill="#f45432"/><circle cx="165" cy="150" r="112" fill="url(#bd1)"/><g stroke="#201e37" stroke-width="13" stroke-linejoin="miter"><path d="M0 150H338"/><path d="M360 150H436" class="brk"/><path d="M250 150L330 70H400"/><path d="M250 150L330 235H395"/></g><circle cx="410" cy="70" r="19" fill="#201e37" class="end e1"/><circle cx="405" cy="235" r="19" fill="#201e37" class="end e2"/><circle r="7" fill="#f2e8d2" opacity="0"><animateMotion id="ba1" dur="1.7s" begin="0.3s;bc1.end+0.6s" path="M0 150H250L330 70H410"/><set attributeName="opacity" to="1" begin="ba1.begin" end="ba1.end"/></circle><circle r="7" fill="#f2e8d2" opacity="0"><animateMotion id="bb1" dur="1.7s" begin="ba1.end+0.5s" path="M0 150H250L330 235H405"/><set attributeName="opacity" to="1" begin="bb1.begin" end="bb1.end"/></circle><circle r="7" fill="#ffa189" opacity="0"><animateMotion id="bc1" dur="1.5s" begin="bb1.end+0.5s" path="M0 150H338"/><set attributeName="opacity" to="1" begin="bc1.begin" end="bc1.end"/></circle></svg>
+  <footer><p class="cue">Cómo diseñar la experiencia de una IA<br>que no siempre hace lo que esperamos.</p><div class="who"><strong>Felipe Amorim</strong><span>Principal AI Product Designer</span></div></footer>
+  <aside class="notes" data-time="0:00" data-dur="0:30" data-idea="Vengo a hablar de diseñar la IA, y de por qué este momento ya lo hemos vivido.">
+<p>Título en pantalla mientras te presentan. Una frase: «Raúl os ha hablado de lo que aporta el diseño cuando la IA puede con casi todo. Yo vengo a enseñaros el trabajo de diseñar la propia IA».</p>
+    <p>No expliques el dibujo de fondo: una línea que entra y varias que salen. Volverá solo.</p>
+  </aside>
+</section>
+
+<!-- 02 -->
+<section class="slide " id="personas">
+  <p class="label">Desde dónde hablo</p>
+  <h2 class="bill b1" style="margin-top:18px;">Para quien<br>usa la IA.</h2>
+  <p class="cue" style="margin-top:24px;max-width:670px;">Cuando algo falla, lo primero que ve la persona es la pantalla.</p>
+  <aside class="notes" data-time="0:30" data-dur="0:30" data-idea="Quien usa una IA se encuentra con una sola experiencia: la que le da la interfaz.">
+    <p>Imagina a alguien que abre un asistente de IA por primera vez desde el móvil. Solo quiere resolver una duda.</p>
+    <p>Si algo falla, no tiene por qué averiguar si ha fallado el modelo, la conexión o la aplicación. Quiere saber qué ha pasado y qué puede hacer.</p>
+    <p>Y enlaza: «Antes de hablar de cómo diseñamos eso, os llevo a 1968».</p>
+  </aside>
+</section>
+
+<!-- 03 -->
+<section class="slide chap" id="ch1">
+  <figure class="plate ht"><img data-src="assets/history/teletype.jpg" alt=""><span class="cr">Foto: PantheraLeo1359531, CC BY 4.0</span></figure>
+  <p class="label" style="margin-bottom:22px;">Capítulo 1: Historia de la interfaz</p>
+  <h2 class="bill b1">Ya hemos<br>estado aquí.</h2>
+  <p class="cue" style="margin-top:28px;max-width:500px;">Hubo un tiempo en que hablar con un ordenador era teclear órdenes en una máquina como esta.</p>
+  <figure class="chph"><span class="sun"></span><div class="ht"><img data-src="assets/history/teletype.jpg" alt="Teletipo Model 33"><span class="cr">Foto: PantheraLeo1359531, CC BY 4.0</span></div><div class="tty"><i style="left:179px;top:141px;--i:0"></i><i style="left:162px;top:141px;--i:1"></i><i style="left:71px;top:157px;--i:2"></i><i style="left:109px;top:141px;--i:3"></i><i style="left:138px;top:171px;--i:4"></i><i style="left:106px;top:157px;--i:5"></i><i style="left:215px;top:141px;--i:6"></i><i style="left:54px;top:157px;--i:7"></i><b>&gt; LIST FILES</b></div><figcaption><strong>Teletype Model 33, 1963</strong></figcaption></figure>
+  <aside class="notes" data-time="1:00" data-dur="0:10" data-idea="Ya hubo un momento en que cambiar la interfaz lo cambió todo.">
+    <p>Solo el título. «Antes de hablar de cómo diseñamos eso, os llevo a 1968. Así se hablaba entonces con un ordenador: tecleando en esto».</p>
+  </aside>
+</section>
+
+<!-- 04 -->
+<section class="slide " id="h1">
+  <div class="hist">
+    <header>
+      <p class="label">9 dic 1968, San Francisco</p>
+      <p class="yr">1968</p>
+      <h2 class="bill b5" style="margin-top:22px;">La madre de<br>todas las demos.</h2>
+      <p class="cue s" style="margin-top:22px;">Un ratón, ventanas, hipertexto y dos personas editando el mismo documento a distancia.</p>
+    </header>
+    <figure><div class="cut"><span class="sun"></span><span class="clk" style="left:79%;top:71%"></span><div class="ht"><img data-src="assets/history/engelbart-1968.jpg" alt="Douglas Engelbart ensayando la demo de 1968"><span class="cr" style="left:16%">Foto: SRI International, CC BY-SA 3.0</span></div></div>
+      <figcaption><strong>Engelbart ensaya la demo</strong></figcaption></figure>
+    <figure><div class="mz" style="margin-top:66px;"><div class="ht fit" style="height:300px;"><img data-src="assets/history/first-mouse-sri.jpg" alt="El primer ratón, de madera"><span class="cr dk">Foto: SRI International, CC BY-SA 3.0</span></div><span class="clk" style="left:49%;top:35%"></span><em style="left:49%;top:35%">clic</em></div>
+      <figcaption style="margin-top:76px;"><strong>El primer ratón, de madera</strong></figcaption></figure>
+  </div>
+  <aside class="notes" data-time="1:10" data-dur="1:20" data-idea="Ya hubo una generación que tuvo que inventar cómo se habla con una máquina.">
+<p>Baja el ritmo. Esto es una historia, cuéntala como tal.</p>
+    <p>Diciembre de 1968. Un ingeniero llamado Douglas Engelbart sube a un escenario en San Francisco y durante noventa minutos enseña cosas que nadie en la sala había visto: un ratón, ventanas, enlaces entre documentos, dos personas escribiendo a la vez en el mismo texto, una videollamada.</p>
+    <p>La gente que le escuchaba trabajaba tecleando órdenes. Para ellos aquello era ciencia ficción con una caja de madera en la mano.</p>
+    <p>La pregunta de Engelbart era la nuestra: cómo hacemos que una persona normal pueda trabajar con una máquina muy capaz.</p>
+    <p class="src">Fall Joint Computer Conference, Civic Auditorium de San Francisco, 9 dic 1968, unos 90 minutos. Se la conoce como «The Mother of All Demos». No des cifra de público: las fuentes dicen 1.000 o 2.000. Verificado el 25 nov; fuentes en research/history-and-methods.md.</p>
+  </aside>
+</section>
+
+<!-- 05 -->
+<section class="slide " id="h2">
+  <p class="label">De la terminal a la ventana</p>
+  <h2 class="bill b3" style="margin-top:14px;">De la demo al Macintosh <em>pasaron dieciséis años.</em></h2>
+  <div class="tl3 seq">
+    <figure><p class="yr">1973</p><div class="ht"><img data-src="assets/history/alto.jpg" alt="Xerox Alto"><span class="cr">Foto: Michael Hicks, CC BY 2.0</span></div><figcaption><strong>Xerox Alto</strong><small>El primero pensado alrededor de una interfaz gráfica</small></figcaption></figure>
+    <figure><p class="yr">1981</p><div class="ht"><img data-src="assets/history/star.jpg" alt="Xerox Star" style="object-position:center 30%"><span class="cr">Foto: vonguard, CC BY-SA 2.0</span></div><figcaption><strong>Xerox Star</strong><small>El primero que salió a la venta, y casi nadie lo compró</small></figcaption></figure>
+    <figure><p class="yr">1984</p><div class="ht"><img data-src="assets/history/macintosh.jpg" alt="Macintosh 128K" style="object-position:center 35%"><span class="cr">Foto: Bernard Gotfryd, Library of Congress</span></div><figcaption><strong>Macintosh</strong><small>Ventanas, iconos, menús y puntero para todos</small></figcaption></figure>
+  </div>
+  <aside class="notes" data-time="2:30" data-dur="0:55" data-idea="Inventar una interfaz nueva lleva años y lo hacen diseñadores probando con personas.">
+<p>Los hitos entran de uno en uno. No leas las fechas: cuenta el recorrido.</p>
+    <p>En Xerox PARC cogen aquellas ideas y en 1973 construyen el Alto. Ocho años después lo intentan vender como Star, y fracasa. Apple lo ve, lo simplifica, y en 1984 llega el Macintosh.</p>
+    <p>Dieciséis años. Y en medio, un trabajo que hoy nos suena: prototipos, pruebas con gente, decisiones sobre cosas que no tenían nombre. Alguien tuvo que decidir que los documentos serían iconos y que se arrastrarían.</p>
+    <p>A esa manera de interactuar la llamamos WIMP: ventanas, iconos, menús, puntero. Llevamos cuarenta años viviendo dentro de ella.</p>
+    <p class="src">Alto 1973, Star 8010 1981, Lisa 1983, Macintosh enero de 1984. Verificado el 25 nov; fuentes en research/history-and-methods.md.</p>
+  </aside>
+</section>
+
+<!-- 06 -->
+<section class="slide " id="mom">
+  <div class="copy"><h2 class="bill" style="font-size:62px;">Mi madre<br>podía usarlo.</h2><p class="cue l r" style="margin-top:24px;">Con práctica.</p></div>
+  <figure><i></i><span class="scr"><svg class="ptr" viewBox="0 0 24 24"><path d="M4 2v18l5-5 3.5 7 3-1.4-3.4-7H19z" fill="#201e37" stroke="#f2e8d2" stroke-width="1.5" stroke-linejoin="round"/></svg></span><span class="clk" style="left:651px;top:387px"></span><img data-src="assets/poster/first-computer.png" alt="Ilustración de una mujer usando un ordenador personal con ratón"></figure>
+  <p class="foot"><span>Escena ilustrativa</span></p>
+  <aside class="notes" data-time="3:25" data-dur="0:35" data-idea="Cambiar la interfaz cambió quién podía usar un ordenador.">
+    <p>«Mi madre podía usarlo. Con práctica. Tenía que aprender a guardar un archivo y luego encontrarlo. Si lo movía a la carpeta equivocada, podía verlo y arreglarlo. Eso le daba confianza para probar».</p>
+    <p>Pausa tras «Con práctica». Eso es lo que consiguió aquella generación de diseñadores: que la máquina dejara de ser cosa de especialistas.</p>
+    <p class="src">Texto de tu deck anterior (poster-show). La imagen es una ilustración generada, etiquetada como escena ilustrativa.</p>
+  </aside>
+</section>
+
+<!-- 07 -->
+<section class="slide " id="h3" data-g="ink">
+  <p class="label" style="margin-bottom:26px;">Tres maneras de hablar con una máquina</p>
+  <div class="pg seq">
+    <div><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"><path d="M30 34h52l14 14v50H30z" opacity=".35"/><path d="M22 26h52l14 14v50H22z" opacity=".65"/><path d="M14 18h52l14 14v50H14z" fill="var(--bgc)"/><g fill="currentColor" stroke="none"><rect x="24" y="42" width="6" height="10"/><rect x="38" y="42" width="6" height="10"/><rect x="52" y="56" width="6" height="10"/><rect x="24" y="60" width="6" height="10"/><rect x="62" y="42" width="6" height="10"/></g></svg>
+      <i>Lotes</i><b>Desde 1945</b><span>Le dejas el trabajo y vuelves a por el resultado.</span></div>
+    <div><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"><rect x="10" y="18" width="92" height="70"/><path d="M10 34h92"/><path d="M24 50l12 9-12 9M44 68h18"/><path d="M78 62v44l11-11 8 17 9-4-8-17h15z" fill="var(--bgc)"/></svg>
+      <i>Comandos</i><b>Desde 1964</b><span>Le dices cómo hacerlo paso a paso, primero tecleando y después con el ratón.</span></div>
+    <div class="hot"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"><path d="M12 20h96v62H58L36 104V82H12z"/><path d="M60 34c2 12 6 16 18 18-12 2-16 6-18 18-2-12-6-16-18-18 12-2 16-6 18-18z" fill="currentColor"/></svg>
+      <i>Intención</i><b>Ahora</b><span>Le dices qué quieres y ella decide cómo hacerlo.</span></div>
+  </div>
+  <p class="foot"><span>Jakob Nielsen, «AI: First New UI Paradigm in 60 Years», 2023</span></p>
+  <aside class="notes" data-time="4:00" data-dur="0:55" data-idea="Pasar de decir cómo a decir qué es un cambio de paradigma, y nos ha tocado a nosotros.">
+<p>Jakob Nielsen lo escribió en 2023: la IA es el primer paradigma de interacción nuevo en sesenta años.</p>
+    <p>Primero dejabas un trabajo y volvías al día siguiente. Luego llegaron los comandos: tú le dices a la máquina cómo hacerlo, paso a paso. La línea de comandos y la interfaz gráfica son eso mismo, con teclado o con ratón.</p>
+    <p>Y ahora la tercera: le dices lo que quieres y ella decide cómo. Eso cambia quién tiene el control.</p>
+    <p>La frase va sola en la diapositiva siguiente.</p>
+    <p class="src">Jakob Nielsen, «AI: First New UI Paradigm in 60 Years», 18 jun 2023: batch processing, command-based interaction, intent-based outcome specification. Verificado el 25 nov.</p>
+  </aside>
+</section>
+
+<!-- 08 -->
+<section class="slide " id="h3b" data-g="ink">
+  <h2 class="bill b1">Esta vez nos toca a nosotros.</h2>
+  <aside class="notes" data-time="4:55" data-dur="0:15" data-idea="Pasar de decir cómo a decir qué es un cambio de paradigma, y nos ha tocado a nosotros.">
+    <p>Di la frase y para: «Nos toca otra vez». Los que estamos en esta sala somos, nos guste o no, la gente de Xerox PARC de este cambio.</p>
+  </aside>
+</section>
+
+<!-- 09 -->
+<section class="slide chap" id="ch2" data-g="ink">
+  <figure class="plate ht"><img data-src="assets/plates/eniac.jpg" alt=""><span class="cr">Foto: U.S. Army, dominio público</span></figure>
+  <p class="label" style="margin-bottom:22px;">Capítulo 2: Diseñar con incertidumbre</p>
+  <h2 class="bill b1">Qué cambia<br>y qué no.</h2>
+<svg class="ill" viewBox="0 0 440 420" fill="none"><defs><pattern id="id" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.4" fill="#4f9a3a"/><animateTransform attributeName="patternTransform" type="translate" from="0 0" to="7 7" dur="0.7s" repeatCount="indefinite"/></pattern><mask id="im"><circle cx="205" cy="212" r="182" fill="#fff"/><rect x="262" y="20" width="180" height="118" fill="#000"/></mask></defs><g mask="url(#im)"><g stroke="#b9ed9a" stroke-width="27" class="wv"><path d="M-220 40 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /><path d="M-220 90 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /><path d="M-220 140 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /><path d="M-220 190 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /><path d="M-220 240 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /><path d="M-220 290 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /><path d="M-220 340 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /><path d="M-220 390 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /></g><g stroke="url(#id)" stroke-width="27" class="wv"><path d="M-220 40 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /><path d="M-220 90 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /><path d="M-220 140 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /><path d="M-220 190 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /><path d="M-220 240 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /><path d="M-220 290 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /><path d="M-220 340 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /><path d="M-220 390 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0 q55 -34 110 0 t110 0" /></g></g><path d="M0 156H212V286H372" stroke="#f7f2df" stroke-width="20"/><circle cx="386" cy="286" r="19" fill="#b9ed9a" class="wend"/><circle r="6" fill="#201e37" opacity="0"><animateMotion id="ir" dur="2.6s" begin="0.5s;ir.end+1s" path="M0 156H212V286H372"/><set attributeName="opacity" to="1" begin="ir.begin" end="ir.end"/></circle></svg>
+  <aside class="notes" data-time="5:10" data-dur="0:10" data-idea="Lo nuevo es el material; lo de siempre es la persona.">
+    <p>Solo el título. «Dos cosas: qué tiene de nuevo este material, y qué sigue siendo igual que en 1968».</p>
+  </aside>
+</section>
+
+<!-- 10 -->
+<section class="slide " id="x3">
+  <p class="label" style="margin-bottom:24px;">Mi trabajo de cada día</p>
+  <h2 class="bill b1">Diseño la experiencia<br>de la <em>propia IA.</em></h2>
+  <aside class="notes" data-time="5:20" data-dur="0:30" data-idea="Mi trabajo es diseñar qué vive la persona cuando la IA se comporta de una forma inesperada.">
+    <p>Di la frase y deja dos segundos.</p>
+    <p>Diseñar esa experiencia también es decidir qué ve la persona si una respuesta tarda, si hay dudas o si la IA no puede hacer lo que se le pide.</p>
+  </aside>
+</section>
+
+<!-- 11 -->
+<section class="slide " id="x4">
+  <div class="split">
+    <div><p class="label">Software convencional</p><h2 class="bill b3" style="margin-top:14px;">Determinista.</h2>
+      <p class="cue" style="margin-top:14px;">Puedo enumerar todos los estados.</p>
+      <svg viewBox="0 0 520 170" fill="none" stroke="#201e37" stroke-width="3" stroke-linecap="round"><path d="M10 85H170"/><path d="M170 85C240 85 250 30 330 30H510"/><path d="M170 85H510"/><path d="M170 85C240 85 250 140 330 140H510"/><circle cx="170" cy="85" r="7" fill="#201e37"/><circle cx="510" cy="30" r="6" fill="#201e37"/><circle cx="510" cy="85" r="6" fill="#201e37"/><circle cx="510" cy="140" r="6" fill="#201e37"/><circle r="8" fill="#aa3527" opacity="0"><animateMotion id="dm0" dur="1.5s" begin="0s;dm2.end+0.5s" path="M170 85C240 85 250 30 330 30H510"/><set attributeName="opacity" to="1" begin="dm0.begin" end="dm0.end"/></circle><circle r="8" fill="#aa3527" opacity="0"><animateMotion id="dm1" dur="1.5s" begin="dm0.end+0.5s" path="M170 85H510"/><set attributeName="opacity" to="1" begin="dm1.begin" end="dm1.end"/></circle><circle r="8" fill="#aa3527" opacity="0"><animateMotion id="dm2" dur="1.5s" begin="dm1.end+0.5s" path="M170 85C240 85 250 140 330 140H510"/><set attributeName="opacity" to="1" begin="dm2.begin" end="dm2.end"/></circle></svg></div>
+    <div><p class="label">Producto con IA generativa</p><h2 class="bill b3" style="margin-top:14px;color:var(--red);">Probabilístico.</h2>
+      <p class="cue" style="margin-top:14px;">No puedo enumerar todas las respuestas.</p>
+      <svg class="fanl" viewBox="0 -30 520 230" fill="none" stroke-linecap="round" style="height:230px;margin-top:4px;"><path d="M10 85H150" stroke="#201e37" stroke-width="3"/><g stroke="#aa3527" stroke-width="1.8"><path d="M150 85C270 85 330 -9 512 -22" style="--i:7"/><path d="M150 85C267 85 326 2 512 -9" style="--i:2"/><path d="M150 85C265 85 322 13 512 3" style="--i:13"/><path d="M150 85C262 85 319 24 512 16" style="--i:9"/><path d="M150 85C260 85 315 35 512 28" style="--i:0"/><path d="M150 85C258 85 312 46 512 41" style="--i:16"/><path d="M150 85C255 85 308 57 512 54" style="--i:5"/><path d="M150 85C253 85 305 68 512 66" style="--i:11"/><path d="M150 85C251 85 301 80 512 79" style="--i:3"/><path d="M150 85C251 85 301 91 512 91" style="--i:15"/><path d="M150 85C253 85 305 102 512 104" style="--i:8"/><path d="M150 85C255 85 308 113 512 117" style="--i:1"/><path d="M150 85C258 85 312 124 512 129" style="--i:12"/><path d="M150 85C260 85 315 135 512 142" style="--i:6"/><path d="M150 85C262 85 319 146 512 154" style="--i:17"/><path d="M150 85C265 85 322 157 512 167" style="--i:10"/><path d="M150 85C267 85 326 168 512 180" style="--i:4"/><path d="M150 85C270 85 330 179 512 192" style="--i:14"/></g><circle cx="150" cy="85" r="7" fill="#201e37"/></svg></div>
+  </div>
+  <aside class="notes" data-time="5:50" data-dur="0:55" data-idea="Lo nuevo es que el material es probabilístico: ya no veo la respuesta antes que la persona.">
+<p>Cuidado con los absolutos, que en esta sala hay ingenieros. El software de siempre también falla. Y un producto con IA puede tener una interfaz tan fija como cualquier otra.</p>
+    <p>La diferencia para diseñar: antes era determinista, podía enumerar los estados y dibujarlos todos. Ahora es probabilístico: hay una parte de la pantalla que se escribe sola cada vez.</p>
+    <p>Pasamos de diseñar resultados a diseñar las condiciones en que ocurren.</p>
+    <p class="src">Argumento propio. Sin cifras.</p>
+  </aside>
+</section>
+
+<!-- 12 -->
+<section class="slide " id="x5" data-g="ink">
+  <p class="label" style="margin-bottom:22px;">Cinco maneras de no ser perfecta</p>
+  <div class="words seq">
+    <div>Lenta <span>segundos, minutos o una tarde entera</span></div>
+    <div>Dudosa <span>no sabe si lo que afirma es cierto</span></div>
+    <div>Variable <span>la misma pregunta, otra respuesta</span></div>
+    <div>Equivocada <span>y lo dice con total seguridad</span></div>
+    <div>Incapaz <span>hay cosas que no puede hacer</span></div>
+  </div>
+  <aside class="notes" data-time="6:45" data-dur="0:45" data-idea="La imperfección tiene formas distintas y cada una pide un diseño distinto.">
+<p>Las palabras entran solas. Una tarea tarda más de lo previsto. Una fuente no se puede comprobar. La misma pregunta recibe dos respuestas distintas. Una respuesta contiene un error. Y hay peticiones que el sistema no puede atender.</p>
+    <p>Cierra: «Casi todo lo que diseño ocurre en estas cinco palabras, y casi nada en la demo perfecta».</p>
+  </aside>
+</section>
+
+<!-- 13 -->
+<section class="slide " id="x6">
+  <h2 class="bill b3" style="margin-top:14px;">Tres zonas de responsabilidad.</h2>
+  <div class="zn seq">
+    <div class="lc-c"><span class="zi"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"><path d="M22 36h76M22 60h76M22 84h76"/><circle class="kn k1" cx="46" cy="36" r="10" fill="var(--paper)"/><circle class="kn k2" cx="78" cy="60" r="10" fill="var(--paper)"/><circle class="kn k3" cx="38" cy="84" r="10" fill="var(--paper)"/></svg></span><h3>Controlamos</h3><p>Estados, errores, permisos y qué se conserva.</p></div>
+    <div class="lc-i"><span class="zi"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><g class="nudge"><path d="M18 92c24-4 40-18 52-44"/><path d="M52 44l22-4 4 22"/></g><path d="M18 92h84" stroke-dasharray="2 12"/></svg></span><h3>Influimos</h3><p>Instrucciones, contexto y cuándo pregunta.</p></div>
+    <div class="lc-n"><span class="zi"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"><g class="dice"><rect x="22" y="22" width="76" height="76" rx="12"/><g fill="currentColor" stroke="none" class="pips"><circle cx="44" cy="42" r="6"/><circle cx="60" cy="60" r="6"/><circle cx="76" cy="78" r="6"/><circle cx="78" cy="46" r="6"/><circle cx="42" cy="74" r="6"/></g></g></svg></span><h3>No predecimos</h3><p>Qué va a responder, cuánto va a tardar y qué quería la persona.</p></div>
+  </div>
+  <aside class="notes" data-time="7:30" data-dur="1:00" data-idea="El trabajo es saber en cuál de las tres zonas está cada decisión.">
+<p>Verde, lo que diseñamos directamente; violeta, lo que solo podemos empujar; ámbar, lo que hay que encajar porque no se puede prever.</p>
+    <p>El error típico es tratar la zona ámbar como si fuera verde: prometer un tiempo o un resultado que nadie controla.</p>
+    <p>Y el contrario: dar por perdida la zona verde porque «la IA es impredecible». Los estados, los permisos y lo que se conserva siguen siendo nuestros.</p>
+  </aside>
+</section>
+
+<!-- 14 -->
+<section class="slide " id="hf">
+  <p class="label">Lo que no ha cambiado</p>
+  <h2 class="bill b3" style="margin-top:14px;">La máquina es nueva, <em>pero la persona es la misma.</em></h2>
+  <div class="hfl seq">
+    <div><i>1952</i><b>Hick</b><span>Cuantas más opciones, más tarda en decidir.</span></div>
+    <div><i>1954</i><b>Fitts</b><span>Lo grande y cercano se acierta antes.</span></div>
+    <div><i>1956</i><b>Miller</b><span>La memoria de trabajo es corta.</span></div>
+    <div><i>1988</i><b>Norman</b><span>El sistema tiene que decir qué ha hecho.</span></div>
+    <div><i>1994</i><b>Nielsen</b><span>Diez heurísticas; la primera pide que se vea el estado del sistema.</span></div>
+    <div><i>2019</i><b>Amershi y otros</b><span>18 guías para IA, con un grupo dedicado a cuando se equivoca.</span></div>
+  </div>
+  <aside class="notes" data-time="8:30" data-dur="1:10" data-idea="Los fundamentos de UX y los factores humanos siguen siendo la base, también con IA.">
+<p>La gente que hizo funcionar la interfaz gráfica no partía de cero: se apoyaba en lo que ya se sabía de las personas. Hick y Fitts son de los años cincuenta, de antes de que hubiera pantallas.</p>
+    <p>Nuestra atención, nuestra memoria y nuestra paciencia son las de entonces. Lo que ha cambiado es el material.</p>
+    <p>Así que tengo dos trabajos a la vez. Uno es nuevo: métodos para un material probabilístico. El otro es el de siempre: heurísticas, leyes, factores humanos.</p>
+    <p>Enlaza con el método: «¿Cómo llevamos estos principios al trabajo de cada día?»</p>
+    <p class="src">Hick 1952; Fitts 1954; Miller, «The Magical Number Seven», 1956; Norman, «The Design of Everyday Things», 1988; Nielsen, 10 heurísticas, 1994; Amershi et al., «Guidelines for Human-AI Interaction», CHI 2019 (Microsoft). Verificado el 25 nov.</p>
+  </aside>
+</section>
+
+<!-- 15 -->
+<section class="slide chap" id="ch3">
+  <figure class="plate ht"><img data-src="assets/plates/mission-control.jpg" alt=""><span class="cr">Foto: NASA, dominio público</span></figure>
+  <p class="label" style="margin-bottom:22px;">Capítulo 3: Métodos de diseño</p>
+  <h2 class="bill b1">Tres<br>métodos.</h2>
+<svg class="ill" viewBox="-10 -10 620 320" fill="none"><defs><pattern id="cd" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="4.0" cy="4.0" r="1.3" fill="#2b1e3c"/><animateTransform attributeName="patternTransform" type="translate" from="0 0" to="8 8" dur="0.7s" repeatCount="indefinite"/></pattern></defs><circle cx="300" cy="150" r="142" fill="#ff6957"/><circle cx="300" cy="150" r="142" fill="url(#cd)" opacity=".5"/><g stroke="#2b1e3c" stroke-width="21" stroke-linejoin="miter"><path d="M0 150H232"/><path d="M368 150H560"/><path d="M170 150L225 76H375L430 150"/><path d="M170 150L225 224H375L430 150"/></g><circle cx="566" cy="150" r="27" fill="#2b1e3c"/><rect x="232" y="127" width="62" height="46" fill="#f7eed8" class="blk b1"/><rect x="306" y="127" width="62" height="46" fill="#f7eed8" class="blk b2"/><circle r="8" fill="#f7eed8" opacity="0"><animateMotion id="rc" dur="4.4s" begin="0.6s;rc.end+0.8s" path="M0 150H226H170L225 224H375L430 150H566"/><set attributeName="opacity" to="1" begin="rc.begin" end="rc.end"/></circle></svg>
+  <aside class="notes" data-time="9:40" data-dur="0:10" data-idea="Tres herramientas para diseñar con incertidumbre.">
+    <p>Solo el título. «Tres herramientas, y ninguna la he inventado yo».</p>
+  </aside>
+</section>
+
+<!-- 16 -->
+<section class="slide " id="me2" data-g="ink">
+  <p class="label">Método 1: Pre-mortem - Gary Klein, 2007</p>
+  <h2 class="bill b4" style="margin-top:14px;">Imagina que ya ha fallado.</h2>
+  <p class="cue s" style="margin-top:12px;max-width:980px;">Antes de lanzar, das el fracaso por hecho y escribes por qué. Si se lo pides a un modelo, la lista llega mucho más lejos que tu imaginación.</p>
+  <div class="pmh"><span>1. Un encargo</span><span>2. Cien respuestas malas</span><span>3. Pocos modos de fallo</span><span>4. Una salida para cada uno</span></div>
+  <svg class="pm" viewBox="0 0 1150 300" fill="none" stroke-linecap="round"><circle cx="46" cy="150" r="24" stroke="#f2e8d2" stroke-width="2.5"/><text x="46" y="159" text-anchor="middle" class="pm-q">?</text><g stroke="#ffa189" stroke-width="1.6"><path d="M70 150C230 150 300 21 470 21" opacity="0.55"/><circle cx="474" cy="21" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 31 470 31" opacity="0.63"/><circle cx="474" cy="31" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 41 470 41" opacity="0.71"/><circle cx="474" cy="41" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 51 470 51" opacity="0.55"/><circle cx="474" cy="51" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 61 470 61" opacity="0.63"/><circle cx="474" cy="61" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 71 470 71" opacity="0.71"/><circle cx="474" cy="71" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 91 470 91" opacity="0.55"/><circle cx="474" cy="91" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 101 470 101" opacity="0.63"/><circle cx="474" cy="101" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 111 470 111" opacity="0.71"/><circle cx="474" cy="111" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 121 470 121" opacity="0.55"/><circle cx="474" cy="121" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 131 470 131" opacity="0.63"/><circle cx="474" cy="131" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 141 470 141" opacity="0.71"/><circle cx="474" cy="141" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 161 470 161" opacity="0.55"/><circle cx="474" cy="161" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 171 470 171" opacity="0.63"/><circle cx="474" cy="171" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 181 470 181" opacity="0.71"/><circle cx="474" cy="181" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 191 470 191" opacity="0.55"/><circle cx="474" cy="191" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 201 470 201" opacity="0.63"/><circle cx="474" cy="201" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 211 470 211" opacity="0.71"/><circle cx="474" cy="211" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 231 470 231" opacity="0.55"/><circle cx="474" cy="231" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 241 470 241" opacity="0.63"/><circle cx="474" cy="241" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 251 470 251" opacity="0.71"/><circle cx="474" cy="251" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 261 470 261" opacity="0.55"/><circle cx="474" cy="261" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 271 470 271" opacity="0.63"/><circle cx="474" cy="271" r="3.5" fill="#ffa189" stroke="none"/><path d="M70 150C230 150 300 281 470 281" opacity="0.71"/><circle cx="474" cy="281" r="3.5" fill="#ffa189" stroke="none"/></g><path d="M490 20 h10 v52 h-10" stroke="#f2e8d2" stroke-width="2.5"/><text x="516" y="53" class="pm-g">Tarda</text><path d="M740 46 H820" stroke="#f2e8d2" stroke-width="2" stroke-dasharray="3 6"/><rect x="826" y="23" width="300" height="46" stroke="#ffa189" stroke-width="2"/><text x="842" y="52" class="pm-r">Lo admite y deja seguir</text><path d="M490 90 h10 v52 h-10" stroke="#f2e8d2" stroke-width="2.5"/><text x="516" y="123" class="pm-g">Llega a medias</text><path d="M740 116 H820" stroke="#f2e8d2" stroke-width="2" stroke-dasharray="3 6"/><rect x="826" y="93" width="300" height="46" stroke="#ffa189" stroke-width="2"/><text x="842" y="122" class="pm-r">Enseña lo que tiene</text><path d="M490 160 h10 v52 h-10" stroke="#f2e8d2" stroke-width="2.5"/><text x="516" y="193" class="pm-g">Se equivoca</text><path d="M740 186 H820" stroke="#f2e8d2" stroke-width="2" stroke-dasharray="3 6"/><rect x="826" y="163" width="300" height="46" stroke="#ffa189" stroke-width="2"/><text x="842" y="192" class="pm-r">Dice que no pudo comprobar</text><path d="M490 230 h10 v52 h-10" stroke="#f2e8d2" stroke-width="2.5"/><text x="516" y="263" class="pm-g">No puede</text><path d="M740 256 H820" stroke="#f2e8d2" stroke-width="2" stroke-dasharray="3 6"/><rect x="826" y="233" width="300" height="46" stroke="#ffa189" stroke-width="2"/><text x="842" y="262" class="pm-r">Un no con alternativas</text></svg>
+  <aside class="notes" data-time="9:50" data-dur="1:25" data-idea="La misma IA que hace imprevisible el producto sirve para imaginar sus resultados antes de lanzarlo.">
+<p>Ahora el método. Tres herramientas, y ninguna la he inventado yo. La primera es de un psicólogo, Gary Klein. Antes de empezar un proyecto reúnes al equipo y dices: «Ha pasado un año y esto ha sido un desastre. Escribid por qué». La gente encuentra riesgos que en una reunión normal no diría.</p>
+    <p>Y aquí está lo nuevo. Con software determinista, el pre-mortem dependía de lo que se te ocurriera. Ahora el material es probabilístico, y tengo una máquina que genera variaciones sin cansarse.</p>
+    <p>Imagina un asistente que transcribe notas de voz. Antes de dibujar, pide a un modelo que proponga fallos: el micrófono no tiene permiso, hay ruido o la grabación se corta. Decide qué debería pasar en cada caso.</p>
+    <p>Así se juntan las dos mitades de la charla: uso la IA para imaginar los muchos resultados que una respuesta probabilística puede dar, y uso los fundamentos para decidir qué hacer con cada uno.</p>
+    <p class="src">Gary Klein, «Performing a Project Premortem», Harvard Business Review, septiembre de 2007. Verificado el 25 nov. El ejemplo de transcripción es hipotético.</p>
+  </aside>
+</section>
+
+<!-- 17 -->
+<section class="slide " id="me1">
+  <p class="label">Método 2: AMFE - Ingeniería de fiabilidad, 1949</p>
+  <h2 class="bill b4" style="margin-top:14px;">La tabla de todo lo que puede fallar.</h2>
+  <p class="cue s" style="margin-top:12px;">Antes de lanzar escribimos una fila por cada fallo, con lo que vive la persona y lo que hacemos.</p>
+  <div class="fm seq">
+    <div class="hd"><span>Modo de fallo</span><span>Qué vive la persona</span><span>Respuesta diseñada</span></div>
+    <div><span>No se genera la imagen</span><span>Se queda sin resultado</span><span><b>Explica el fallo</b> y permite reintentar.</span></div>
+    <div><span>La petición no se admite</span><span>No sabe qué puede pedir</span><span><b>Explica el límite</b> y ofrece una alternativa.</span></div>
+    <div><span>Tarda más de lo normal</span><span>No sabe si sigue en marcha</span><span><b>Muestra el estado</b> sin prometer un plazo.</span></div>
+    <div><span>Se pierde la conexión</span><span>Teme perder lo que escribió</span><span><b>Conserva el texto</b> y permite volver a intentarlo.</span></div>
+  </div>
+  <p class="foot"><span>Análisis modal de fallos y efectos: procedimiento militar de EE. UU., 1949, usado por la NASA en el programa Apolo</span></p>
+  <aside class="notes" data-time="11:15" data-dur="1:10" data-idea="La tabla de fallos que escribimos antes de lanzar tiene setenta años y un nombre.">
+<p>Los fallos que salen del pre-mortem van a una tabla.</p>
+    <p>La segunda viene de la ingeniería de fiabilidad. AMFE, en inglés FMEA: una tabla con todo lo que puede fallar, qué efecto tiene y qué haces al respecto. La usó la NASA para ir a la Luna.</p>
+    <p>Nosotros hacemos lo mismo con una columna cambiada: el efecto que nos importa es lo que vive la persona. Qué ha pasado, qué lee, qué conserva y qué puede hacer.</p>
+    <p>Las filas ilustran fallos posibles al generar una imagen. Si la interfaz promete recuperar algo o avisar cuando termine, el producto tiene que poder cumplirlo.</p>
+    <p class="src">FMEA: procedimiento militar MIL-P-1629 (EE. UU., 1949); adoptado por la NASA en los años sesenta. Verificado el 25 nov.</p>
+  </aside>
+</section>
+
+<!-- 18 -->
+<section class="slide " id="me3">
+  <p class="label">Método 3: Los golfos de Norman, 1986</p>
+  <h2 class="bill b4" style="margin-top:14px;">Dos distancias entre persona y máquina.</h2>
+  <div class="gdef"><p><b>Ejecución</b> De lo que quiero a cómo se lo pido.</p><p><b>Evaluación</b> De lo que ha hecho a lo que yo entiendo.</p></div>
+  <div class="gf">
+    <div><h3>Interfaz gráfica, 1984</h3>
+      <div class="gr"><b>Ejecución</b><div class="gd"><em></em><i></i><u style="--w:170px"></u><i></i><s></s></div><span>«¿En qué menú estaba eso?»</span></div>
+      <div class="gr"><b>Evaluación</b><div class="gd"><em></em><i></i><u style="--w:36px"></u><i></i><s></s></div><span>«Veo dónde ha caído el archivo.»</span></div></div>
+    <div class="hot"><h3>Interfaz con IA, hoy</h3>
+      <div class="gr"><b>Ejecución</b><div class="gd"><em></em><i></i><u style="--w:36px"></u><i></i><s></s></div><span>«Lo pido con mis palabras.»</span></div>
+      <div class="gr"><b>Evaluación</b><div class="gd"><em></em><i></i><u style="--w:170px"></u><i></i><s></s></div><span>«¿Me ha entendido? ¿Es verdad? ¿Ha terminado?»</span></div></div>
+  </div>
+  <p class="cue" style="margin-top:26px;">La IA acorta la primera y alarga la segunda, <span style="color:var(--red)">que es donde trabajamos.</span></p>
+  <aside class="notes" data-time="12:25" data-dur="1:05" data-idea="La IA cierra el golfo de ejecución y abre el de evaluación; diseñar IA es trabajar en el segundo.">
+<p>La tercera es un mapa. Norman dibujó dos distancias entre una persona y una máquina. La de ida: cómo le digo lo que quiero. La de vuelta: cómo sé lo que ha hecho y si era lo que yo quería.</p>
+    <p>Cuarenta años de interfaz gráfica se dedicaron sobre todo a la primera: botones, menús, formularios.</p>
+    <p>La IA casi la cierra. Lo pides con tus palabras y ya. Pero abre la segunda como nunca: ha tardado, ha entendido otra cosa, ha contestado muy segura algo que no ha comprobado.</p>
+    <p>Ahí es donde ayuda la interfaz: hace visible el estado, indica qué no se pudo comprobar y explica cómo seguir.</p>
+    <p class="src">Norman, «Cognitive Engineering», en Norman y Draper, «User Centered System Design», 1986; divulgado en «The Design of Everyday Things», 1988. Verificado el 25 nov.</p>
+  </aside>
+</section>
+
+<!-- 19 -->
+<section class="slide " id="m1">
+  <h2 class="bill b3" style="margin-top:14px;">Dos oficios a la vez.</h2>
+  <div class="two">
+    <div class="l"><p class="label">El de siempre</p><h3>Conocer a la persona.</h3><ul><li>Heurísticas</li><li>Leyes de UX</li><li>Factores humanos</li></ul></div>
+    <div class="venn"><i></i><i></i><b>Diseñar<br>IA</b></div>
+    <div class="r"><p class="label">El nuevo</p><h3>Diseñar lo que no se puede prever.</h3><ul><li>La tabla de fallos</li><li>El pre-mortem con un modelo</li><li>Decidir dónde la IA no decide</li></ul></div>
+  </div>
+  <aside class="notes" data-time="13:30" data-dur="1:05" data-idea="Hace falta saber lo básico de UX y adaptarse al proceso nuevo, las dos cosas.">
+<p>Lo que os lleváis. Dos oficios a la vez: el de siempre y el nuevo.</p>
+    <p>Uno: los fundamentos. Si no sabes por qué el estado del sistema tiene que verse, ninguna herramienta de IA te lo va a decir.</p>
+    <p>Dos: el proceso nuevo. La tabla de fallos y el pre-mortem, apoyados en un modelo. Es la parte que hace cinco años no existía.</p>
+    <p>Tres: los límites. Di qué puede comprobar el sistema, cuándo necesita confirmación y qué queda fuera de su alcance.</p>
+  </aside>
+</section>
+
+<!-- 20 -->
+<section class="slide chap" id="ch4" data-g="ink">
+  <figure class="plate ht"><img data-src="assets/plates/earthrise.jpg" alt=""><span class="cr">Foto: NASA / Bill Anders, dominio público</span></figure>
+  <p class="label" style="margin-bottom:22px;">Capítulo 4: La próxima interfaz</p>
+  <h2 class="bill b1">La próxima<br>interfaz.</h2>
+<svg class="ill wt" viewBox="-10 0 640 300" fill="none"><defs><pattern id="wd" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="4.5" r="1.6" fill="#3a1420"/><animateTransform attributeName="patternTransform" type="translate" from="0 0" to="9 9" dur="0.7s" repeatCount="indefinite"/></pattern></defs><circle cx="170" cy="150" r="136" fill="#f45432"/><circle cx="170" cy="150" r="136" fill="url(#wd)"/><path d="M0 108H216V162H300" stroke="#f7eed8" stroke-width="23"/><path d="M430 162H580" stroke="#f7eed8" stroke-width="23"/><circle cx="322" cy="162" r="6" fill="#f7eed8" class="wdot" style="--i:0"/><circle cx="344" cy="162" r="6" fill="#f7eed8" class="wdot" style="--i:1"/><circle cx="366" cy="162" r="6" fill="#f7eed8" class="wdot" style="--i:2"/><circle cx="388" cy="162" r="6" fill="#f7eed8" class="wdot" style="--i:3"/><circle cx="410" cy="162" r="6" fill="#f7eed8" class="wdot" style="--i:4"/><circle cx="590" cy="162" r="33" fill="#f45432" class="wend"/></svg>
+  <aside class="notes" data-time="14:35" data-dur="0:10" data-idea="Volvemos a la historia, pero ahora es la nuestra.">
+    <p>Solo el título. «Y esto está pasando ahora».</p>
+  </aside>
+</section>
+
+<!-- 21 -->
+<section class="slide " id="dv">
+  <p class="label">Ahora mismo</p>
+  <h2 class="bill b3" style="margin-top:14px;">Todo el mundo está <em>buscando la forma.</em></h2>
+  <div class="dvg seq">
+    <div class=""><div class="ht"><img data-src="assets/devices/humane.png" alt=""></div><div><i>2024 - broche</i><b>Humane Ai Pin</b><span>Sin pantalla y con proyector láser. Dejó de funcionar en febrero de 2025.</span></div></div>
+    <div class=""><div class="ht"><img data-src="assets/devices/rabbit.png" alt=""></div><div><i>2024 - bolsillo</i><b>Rabbit r1</b><span>Una rueda, una cámara y una pantalla pequeña.</span></div></div>
+    <div class=""><div class="ht"><img data-src="assets/devices/friend.png" alt=""></div><div><i>2024 - colgante</i><b>Friend</b><span>Escucha todo el rato. Su segunda versión salió en julio de 2026.</span></div></div>
+    <div class=""><div class="ht"><img data-src="assets/devices/rayban-display.png" alt=""></div><div><i>2025 - gafas</i><b>Meta Ray-Ban Display</b><span>Pantalla en la lente y una pulsera que lee la mano.</span></div></div>
+    <div class=""><div class="ht"><img data-src="assets/devices/stream-ring.png" alt=""></div><div><i>2025 - anillo</i><b>Stream</b><span>Un micrófono en el dedo para notas susurradas.</span></div></div>
+    <div class=""><div class="ht"><img data-src="assets/devices/android-xr.png" alt=""></div><div><i>2026 - gafas</i><b>Android XR</b><span>Cámara y audio sin pantalla, a la venta en diciembre.</span></div></div>
+    <div class=""><div class="ht"><img data-src="assets/devices/muse-charm.png" alt=""></div><div><i>2026 - llavero</i><b>Meta Muse Charm</b><span>Se toca para hablar con el agente de Meta. Se anunció en septiembre.</span></div></div>
+    <div class=""><div class="ht"><img data-src="assets/devices/openai.png" alt=""></div><div><i>Por llegar</i><b>OpenAI y Jony Ive</b><span>Aún no tiene nombre ni fecha. Se habla de un aparato sin pantalla.</span></div></div>
+  </div>
+  <p class="cue s" style="margin-top:20px;">Ninguno tiene todavía su ventana, su icono, su menú y su puntero.</p>
+  <p class="foot"><span>Ilustraciones de formato, no retratos de los productos. Rabbit r1: foto de Booredatwork.com, CC BY 3.0</span></p>
+  <aside class="notes" data-time="14:45" data-dur="1:00" data-idea="Nadie sabe todavía qué forma tendrá la interfaz de la IA, y eso es una oportunidad de diseño.">
+<p>Y esto está pasando ahora. Mirad cuánta gente está intentando dar con la forma: un broche, un colgante, unas gafas, un anillo. Meta presentó en septiembre un llavero para hablar con su agente. OpenAI compró el estudio de Jony Ive y lo que se cuenta es que preparan un aparato sin pantalla.</p>
+    <p>Algunos ya han fracasado, como fracasó el Xerox Star. Importa poco. Estamos en 1975: las piezas están sobre la mesa y nadie ha hecho todavía el Macintosh.</p>
+    <p class="src">Lista y estado de cada producto verificados el 25 nov; fuentes en research/history-and-methods.md.</p>
+  </aside>
+</section>
+
+<!-- 22 -->
+<section class="slide " id="fin" data-g="ink">
+  <p class="label">La próxima interfaz</p>
+  <div class="evo">
+    <figure><svg viewBox="0 0 260 170" fill="none" stroke="currentColor" stroke-width="4"><rect x="6" y="6" width="248" height="158"/><path d="M28 60l22 16-22 16" stroke-linecap="round" stroke-linejoin="round"/><path d="M64 96h70" stroke-linecap="round" class="caret"/></svg><figcaption><b>1968</b>Comandos</figcaption></figure>
+    <figure><svg viewBox="0 0 260 170" fill="none" stroke="currentColor" stroke-width="4"><rect x="6" y="6" width="248" height="158"/><path d="M6 34h248"/><rect x="30" y="58" width="66" height="50"/><rect x="128" y="76" width="50" height="62" class="doc"/><path d="M150 96v48l12-12 8 18 9-4-8-18h16z" fill="var(--ink)" stroke-linejoin="round" class="ptr2"/></svg><figcaption><b>1984</b>Ventanas</figcaption></figure>
+    <figure class="nx"><svg viewBox="0 0 260 170" fill="none"><defs><pattern id="fd" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.6" fill="#201e37"/><animateTransform attributeName="patternTransform" type="translate" from="0 0" to="8 8" dur="0.7s" repeatCount="indefinite"/></pattern></defs><rect x="6" y="6" width="248" height="158" stroke="#ffa189" stroke-width="4" stroke-dasharray="14 10" class="march"/><circle cx="130" cy="85" r="52" fill="#f45432" class="pulse"/><circle cx="130" cy="85" r="52" fill="url(#fd)" class="pulse"/><text x="130" y="108" text-anchor="middle" class="qm">?</text></svg><figcaption><b>Ahora</b>Lo siguiente</figcaption></figure>
+  </div>
+  <h2 class="bill b3" style="margin-top:34px;">Estamos a punto de entregar <em>la próxima interfaz.</em></h2>
+  <p class="cue s" style="margin-top:16px;">A la generación de Engelbart le tocó inventar la ventana, y a la nuestra nos toca lo que venga después.</p>
+  <aside class="notes" data-time="15:45" data-dur="1:00" data-idea="Somos la generación a la que le toca diseñar la interfaz que viene después de la gráfica.">
+<p>Vuelve a 1968. Engelbart y los que vinieron detrás no sabían que estaban diseñando los siguientes cuarenta años. Estaban resolviendo problemas concretos con gente delante.</p>
+    <p>Nosotros estamos igual. Cada estado de espera, cada fallo con su salida, cada no bien dicho es una pieza de esa interfaz nueva.</p>
+    <p>Di la frase despacio: «Estamos a punto de entregar la próxima interfaz». Y es un momento buenísimo para dedicarse a esto.</p>
+  </aside>
+</section>
+
+<!-- 23 -->
+<section class="slide " id="close">
+<svg class="branch ill" viewBox="-10 20 450 270" fill="none"><defs><pattern id="bd2" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="4.0" cy="4.0" r="1.7" fill="#ffd9a0"/><animateTransform attributeName="patternTransform" type="translate" from="0 0" to="8 8" dur="0.7s" repeatCount="indefinite"/></pattern></defs><circle cx="165" cy="150" r="112" fill="#f45432"/><circle cx="165" cy="150" r="112" fill="url(#bd2)"/><g stroke="#201e37" stroke-width="13" stroke-linejoin="miter"><path d="M0 150H338"/><path d="M360 150H436" class="brk"/><path d="M250 150L330 70H400"/><path d="M250 150L330 235H395"/></g><circle cx="410" cy="70" r="19" fill="#201e37" class="end e1"/><circle cx="405" cy="235" r="19" fill="#201e37" class="end e2"/><circle r="7" fill="#f2e8d2" opacity="0"><animateMotion id="ba2" dur="1.7s" begin="0.3s;bc2.end+0.6s" path="M0 150H250L330 70H410"/><set attributeName="opacity" to="1" begin="ba2.begin" end="ba2.end"/></circle><circle r="7" fill="#f2e8d2" opacity="0"><animateMotion id="bb2" dur="1.7s" begin="ba2.end+0.5s" path="M0 150H250L330 235H405"/><set attributeName="opacity" to="1" begin="bb2.begin" end="bb2.end"/></circle><circle r="7" fill="#ffa189" opacity="0"><animateMotion id="bc2" dur="1.5s" begin="bb2.end+0.5s" path="M0 150H338"/><set attributeName="opacity" to="1" begin="bc2.begin" end="bc2.end"/></circle></svg>
+  <h2 class="bill b1 thx">Gracias.</h2>
+  <footer><div><p class="fine">Felipe Amorim - Principal AI Product Designer</p></div>
+    <div class="qr"><span class="fine">linkedin.com/in/felipecaroe</span><img data-src="assets/qr-linkedin.svg" alt="LinkedIn de Felipe Amorim"></div></footer>
+  <aside class="notes" data-time="16:45" data-dur="0:40" data-idea="La frase que se llevan.">
+<p>La frase ya no está en pantalla. Dila tú, despacio: «No siempre podemos diseñar lo que la IA va a responder, pero sí cómo lo vive la gente». Es el golfo de Norman dicho con mis palabras.</p>
+    <p>Gracias, QR, preguntas.</p>
+    <p class="src">La frase grande es la que cierra tu descripción en Luma. QR: LinkedIn. Escanéalo con tu móvil antes de presentar.</p>
+  </aside>
+</section>
+
+</div></div>
+<div class="counter" id="cnt"></div>
+<button class="nav l" onclick="nav(-1)" aria-label="Anterior">←</button><button class="nav r" onclick="nav(1)" aria-label="Siguiente">→</button>
+<div id="notes"><div class="n-meta"><span id="nClock"></span><span id="nIdea"></span></div><div class="n-body" id="nBody"></div></div>
+<script>
+const Q = new URLSearchParams(location.search), PRINT = Q.has('print');
+const MOBILE = !PRINT && matchMedia('(hover: none) and (pointer: coarse)').matches;
+if (MOBILE) document.body.classList.add('mobile');
+else document.querySelectorAll('img[data-src]').forEach(img => { img.src = img.dataset.src; });
+</script>
+<script>
+const slides = [...document.querySelectorAll('.slide')], N = slides.length;
+const slideImages = MOBILE ? slides.map(slide => [...slide.querySelectorAll('img[data-src]')]) : [];
+if (PRINT) document.body.classList.add('print');
+if (MOBILE || Q.has('still')) document.body.classList.add('still');
+let cur = 0;
+const steps = s => [...s.querySelectorAll('.f')];
+function fit() { if (PRINT) return; const k = Math.min(innerWidth / 1280, innerHeight / 720); document.getElementById('stage').style.transform = 'scale(' + k + ')'; }
+fit(); addEventListener('resize', fit);
+function light(s) { const f = steps(s); f.forEach((el, k) => el.classList.toggle('on', k === +s.dataset.i)); }
+
+/* Presentation canvas: every slide sits on one big canvas at its own place, size and angle; the camera flies between them. */
+const STILL = Q.has('still'); var world; let far, POS = [], vt, ready = false;
+const PLATES = [['assets/history/terminal.jpg', 'Foto: Jason Scott, CC BY 2.0', 'p-sun'], ['assets/history/alto-front.jpg', 'Foto: The wub, CC BY-SA 4.0', 'p-vio'],
+  ['assets/history/star-collection.jpg', 'Foto: Marcin Wichary, CC BY 2.0', 'p-grn'], ['assets/history/macintosh-museum.jpg', 'Foto: Sandra Becker 01, CC BY-SA 4.0', 'p-cor'], ['assets/history/first-mouse.jpg', 'Foto: VillageHero, CC BY-SA 2.0', 'p-sun']];
+function layout() {
+  const stage = document.getElementById('stage');
+  far = document.createElement('div'); far.className = 'far'; stage.prepend(far);
+  world = document.createElement('div'); world.className = 'world'; stage.insertBefore(world, slides[0]); slides.forEach(s => world.append(s));
+  const CH = []; let x = 0, y = 0, r = 0, ch = 0, k = 0, ps = 1; const ROT = [0, -6, 8, -4, 10, -7], G = 360;
+  slides.forEach((s, i) => {
+    const chap = s.classList.contains('chap'), flow = s.classList.contains('flow');
+    let sc = chap ? 1.6 : flow ? 0.8 : /^(k1|k2|k3|x4|x5|mom|x3|fin|h3b)$/.test(s.id) ? 1.25 : 1; if (i === 0) sc = 1.4; if (s.id === 'close') sc = 1.5;
+    if (i > 0) {
+      const sx = 1280 * (ps + sc) / 2 + G, sy = 720 * (ps + sc) / 2 + G, rad = r * Math.PI / 180; let dx, dy;
+      if (chap) { ch++; dx = sx + 1500; dy = (ch % 2 ? 1 : -1) * 1300; k = 0; }
+      else { k++; if (k % 4 === 0) { dx = 0; dy = sy; } else { dx = (Math.floor(k / 4) % 2 ? -1 : 1) * sx; dy = 0; } }
+      x += dx * Math.cos(rad) - dy * Math.sin(rad); y += dx * Math.sin(rad) + dy * Math.cos(rad);
+      if (chap) { CH.push([i, ch]);
+        r = ROT[ch];
+      }
+    }
+    POS[i] = { x, y, r, s: sc }; ps = sc;
+    s.style.left = (x - 640) + 'px'; s.style.top = (y - 360) + 'px'; s.style.transform = 'rotate(' + r + 'deg) scale(' + sc + ')';
+  });
+  // photo plates between chapters: start halfway along the flight, then get pushed clear of every slide except the two they sit between
+  CH.forEach(([i, c]) => {
+    const A = POS[i - 1], B = POS[i], pl = PLATES[(c - 1) % PLATES.length], pm = c === 3 ? .476 : .5;
+    let cx = A.x + (B.x - A.x) * pm, cy = A.y + (B.y - A.y) * pm;
+    for (let n = 0; n < 40; n++) POS.forEach((P, j) => { if (j === i || j === i - 1) return;
+      const d = Math.hypot(cx - P.x, cy - P.y) || 1, need = 734 * P.s * .95 + 900; if (d < need) { cx += (cx - P.x) / d * (need - d + 4); cy += (cy - P.y) / d * (need - d + 4); } });
+    const f = document.createElement('figure'); f.className = 'cplate ht ' + pl[2]; f.innerHTML = '<img src="' + pl[0] + '" alt=""><span class="cr">' + pl[1] + '</span>';
+    f.style.cssText = 'left:' + (cx - 800) + 'px;top:' + (cy - 520) + 'px;transform:rotate(' + ((A.r + B.r) / 2 + 6) + 'deg)'; world.append(f);
+  });
+  // far layer: artwork that drifts slower than the slides
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const xs = POS.map(p => p.x * .14), ys = POS.map(p => p.y * .14), x0 = Math.min(...xs) - 900, x1 = Math.max(...xs) + 900, y0 = Math.min(...ys) - 700, y1 = Math.max(...ys) + 700;
+  const kinds = ['d sun', 'd cor', 'd vio', 'd grn', 'ring', 'ring cor', 'bar', 'bar cor', 'plus', 'grid'], glyph = ['1968', '?', '1984', '>_', '0/7', '40%'];
+  for (let i = 0; i < 90; i++) {
+    const e = document.createElement('i'), t = i % 9 === 0 ? 'gl' : kinds[Math.floor(rnd() * kinds.length)], z = 60 + rnd() * rnd() * 520;
+    e.className = 'fa ' + t; if (t === 'gl') e.textContent = glyph[Math.floor(rnd() * glyph.length)];
+    e.style.cssText = 'left:' + (x0 + rnd() * (x1 - x0)) + 'px;top:' + (y0 + rnd() * (y1 - y0)) + 'px;--z:' + z + 'px;rotate:' + Math.round(rnd() * 40 - 20) + 'deg'; far.append(e);
+  }
+}
+const cam = (x, y, r, z) => 'scale(' + z + ') rotate(' + (-r) + 'deg) translate(' + (-x) + 'px,' + (-y) + 'px)';
+const farT = (x, y, r) => 'rotate(' + (-r * .3) + 'deg) translate(' + (-x * .14) + 'px,' + (-y * .14) + 'px)';
+function fly(from, to) {
+  const A = POS[from], B = POS[to], inst = !ready || STILL || from === to; ready = true;
+  world.getAnimations().forEach(a => a.cancel()); far.getAnimations().forEach(a => a.cancel());
+  world.style.transform = cam(B.x, B.y, B.r, 1 / B.s); far.style.transform = farT(B.x, B.y, B.r);
+  const dist = Math.hypot(B.x - A.x, B.y - A.y), dur = inst ? 0 : Math.min(3000, 1250 + dist * .32);
+  slides.forEach((s, i) => s.classList.toggle('vis', Math.abs(i - to) <= 2 || (!inst && Math.abs(i - from) <= 2)));
+  if (!inst) slides[from].classList.add('live');
+  clearTimeout(vt); world.classList.remove('rest');
+  vt = setTimeout(() => { world.classList.add('rest'); slides.forEach(s => s.classList.remove('live')); slides.forEach((s, i) => s.classList.toggle('vis', Math.abs(i - to) <= 1)); }, dur + 80);
+  if (inst) return;
+  // one continuous curve: position and angle ease in and out, the zoom dips in the middle and comes back, with no corner anywhere
+  const zo = Math.max(.5, Math.min(.94, 2100 / dist)), la = Math.log(1 / A.s), lb = Math.log(1 / B.s), kw = [], kf = [], n = 40;
+  for (let k = 0; k <= n; k++) {
+    const t = k / n, e = t * t * t * (t * (t * 6 - 15) + 10), dip = 1 - (1 - zo) * Math.pow(Math.sin(Math.PI * e), 2);
+    const x = A.x + (B.x - A.x) * e, y = A.y + (B.y - A.y) * e, r = A.r + (B.r - A.r) * e;
+    kw.push({ transform: cam(x, y, r, Math.exp(la + (lb - la) * e) * dip) }); kf.push({ transform: farT(x, y, r) });
+  }
+  world.animate(kw, { duration: dur, easing: 'linear' }); far.animate(kf, { duration: dur, easing: 'linear' });
+}
+if (!PRINT && !MOBILE) { document.body.classList.add('canvas'); layout(); }
+/* decode every picture up front, a few at a time, so no flight has to wait for one */
+if (!PRINT && !MOBILE) (async () => { for (const im of document.images) { try { await im.decode(); } catch (e) {} } })();
+function show(n, dir) {
+  const prev = cur; slides[cur].classList.remove('active'); cur = Math.max(0, Math.min(N - 1, n));
+  const s = slides[cur]; s.classList.add('active');
+  if (MOBILE) {
+    slideImages.forEach((images, index) => {
+      const nearby = Math.abs(index - cur) <= 1;
+      images.forEach(img => {
+        if (nearby && !img.hasAttribute('src')) img.src = img.dataset.src;
+        if (!nearby && img.hasAttribute('src')) img.removeAttribute('src');
+      });
+    });
+  } else if (!PRINT) fly(prev, cur);
+  const f = steps(s); if (f.length) { s.dataset.i = Q.has('step') ? Math.min(f.length - 1, +Q.get('step')) : (dir < 0 ? f.length - 1 : 0); light(s); }
+  document.getElementById('stage').style.setProperty('--p', (cur + 1) / N);
+  document.getElementById('cnt').textContent = String(cur + 1).padStart(2, '0') + ' / ' + N;
+  const a = s.querySelector('aside.notes');
+  document.getElementById('nClock').textContent = a ? 'Empieza ' + a.dataset.time + ' · dura ' + a.dataset.dur + (f.length ? ' · ' + f.length + ' pulsaciones' : '') : '';
+  document.getElementById('nIdea').textContent = a ? a.dataset.idea : ''; document.getElementById('nBody').innerHTML = a ? a.innerHTML : '';
+  history.replaceState(null, '', location.search + '#' + (cur + 1));
+}
+function nav(d) {
+  const s = slides[cur], f = steps(s), i = +s.dataset.i;
+  if (f.length && !document.body.classList.contains('all') && i + d >= 0 && i + d < f.length) { s.dataset.i = i + d; return light(s); }
+  show(cur + d, d);
+}
+if (!PRINT) {
+  const deck = document.querySelector('.deck');
+  const touchControls = matchMedia('(hover: none) and (pointer: coarse)');
+  let swipe;
+  deck.addEventListener('pointerdown', e => {
+    if (!touchControls.matches || e.pointerType !== 'touch') return;
+    swipe = e.isPrimary ? { id: e.pointerId, x: e.clientX, y: e.clientY } : undefined;
+  });
+  deck.addEventListener('pointercancel', () => { swipe = undefined; });
+  deck.addEventListener('pointerup', e => {
+    if (swipe?.id !== e.pointerId) return;
+    const dx = e.clientX - swipe.x, dy = e.clientY - swipe.y;
+    swipe = undefined;
+    if (Math.abs(dx) >= 45 && Math.abs(dx) > 1.5 * Math.abs(dy)) nav(dx < 0 ? 1 : -1);
+  });
+}
+addEventListener('keydown', e => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (['ArrowRight', ' ', 'PageDown'].includes(e.key)) { e.preventDefault(); return nav(1); }
+  if (['ArrowLeft', 'PageUp'].includes(e.key)) { e.preventDefault(); return nav(-1); }
+  if (e.key === 'ArrowDown') { e.preventDefault(); return show(cur + 1, 1); }
+  if (e.key === 'ArrowUp') { e.preventDefault(); return show(cur - 1, 1); }
+  const k = e.key.toLowerCase();
+  if (k === 'n') document.body.classList.toggle('show-notes');
+  if (k === 'a') document.body.classList.toggle('all');
+});
+if (!PRINT && !MOBILE) document.querySelectorAll('.bill').forEach(b => {
+  let i = 0; const tw = document.createTreeWalker(b, NodeFilter.SHOW_TEXT), ns = []; while (tw.nextNode()) ns.push(tw.currentNode);
+  ns.forEach(t => { const fr = document.createDocumentFragment();
+    t.nodeValue.split(/(\s+)/).forEach(x => { if (!x) return; if (/^\s+$/.test(x)) return fr.append(' ');
+      const w = document.createElement('span'); w.className = 'w'; w.style.setProperty('--i', i++); w.textContent = x; fr.append(w); });
+    t.replaceWith(fr); });
+});
+let idleT; addEventListener('mousemove', () => { document.body.classList.remove('idle'); clearTimeout(idleT); idleT = setTimeout(() => document.body.classList.add('idle'), 2000); });
+if (!PRINT) show(Math.max(1, parseInt(location.hash.slice(1), 10) || 1) - 1, 1);
+if (Q.has('notes')) document.body.classList.add('show-notes');
+if (Q.has('selftest')) { const bad = [...document.images].filter(i => i.hasAttribute('src') && i.complete && !i.naturalWidth).map(i => i.src.split('/').slice(-2).join('/')); document.title = 'SELFTEST slides=' + N + ' steps=' + document.querySelectorAll('.f').length + ' brokenImages=' + bad.join(','); }
+</script>
+</body>
+</html>
