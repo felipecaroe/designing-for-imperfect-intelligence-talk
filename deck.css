@@ -211,7 +211,7 @@ body.print *, body.still * { transition:none !important; }
 #cover { justify-content:flex-start; padding-top:96px; }
 #cover footer { align-items:flex-end; } #cover footer .cue { margin:0; }
 #cover .who { display:flex; flex-direction:column; align-items:flex-end; gap:4px; text-align:right; }
-#cover .who span { font:600 13px/1.3 var(--mono); letter-spacing:.04em; }
+#cover .who > span { font:600 13px/1.3 var(--mono); letter-spacing:.04em; }
 .strip { justify-content:center; }
 .k1g { display:grid; grid-template-columns:auto 1fr; gap:50px; align-items:end; margin-top:22px; padding-bottom:26px; border-bottom:2px solid var(--ink); }
 .k1g .num { line-height:.74; } .k1g .ppl { justify-content:space-between; } .k1g .ppl svg { width:70px; height:140px; }
@@ -555,6 +555,17 @@ body.canvas .slide.live .plate img { scale:1.06; }
 #close { justify-content:center !important; align-items:center !important; padding-top:40px !important; padding-bottom:120px; }
 #close svg.branch { position:static !important; width:440px; margin:0; }
 #close .thx { font-size:96px; margin-top:34px; text-align:center; color:var(--ink); }
+
+.portfolio-link { position:relative; color:var(--ink); font:600 16px/1.4 var(--mono); text-decoration:underline; text-decoration-color:var(--rule); text-underline-offset:3px; white-space:nowrap; }
+.portfolio-link:hover, .portfolio-link:focus-visible { color:var(--red); text-decoration-color:currentColor; }
+.portfolio-link:focus-visible { outline:2px solid currentColor; outline-offset:5px; }
+.slide > .portfolio-link { position:absolute; right:64px; bottom:44px; }
+.closing-links { display:grid; justify-items:end; gap:6px; }
+.portfolio-mobile-label, body.mobile .portfolio-url { display:none; }
+body:not(.print) .slide:not(.active) .portfolio-link { visibility:hidden; }
+body.mobile .portfolio-mobile-label { display:inline; }
+body.mobile .portfolio-link { font-size:max(16px, calc(12px / var(--stage-scale))); touch-action:manipulation; }
+body.mobile .portfolio-link::after { content:''; position:absolute; inset:calc(-22px / var(--stage-scale)) -12px calc(-8px / var(--stage-scale)); }
 
 body.mobile .stage { overflow:hidden; }
 body.mobile .stage::after, body.mobile .slide:not(.active) { display:none; }
