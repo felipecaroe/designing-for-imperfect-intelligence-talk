@@ -395,12 +395,12 @@ body.print .rib polygon, body.still .rib polygon { transform:none !important; an
 #h3 > *:not(.label):not(.foot):not(.notes) { zoom:1.12; }
 #x5 > *:not(.label):not(.foot):not(.notes) { zoom:1.3; }
 #x6 > *:not(.label):not(.foot):not(.notes) { zoom:1.14; }
-#hf > *:not(.label):not(.foot):not(.notes) { zoom:1.1; }
+#hf > *:not(.label):not(.foot):not(.notes):not(.portfolio-link) { zoom:1.1; }
 #k1 > *:not(.label):not(.foot):not(.notes) { zoom:1.3; }
 #me1 > *:not(.label):not(.foot):not(.notes) { zoom:1.12; }
 #me2 > *:not(.label):not(.foot):not(.notes) { zoom:1.12; }
 #me3 > *:not(.label):not(.foot):not(.notes) { zoom:1.2; }
-#m1 > *:not(.label):not(.foot):not(.notes) { zoom:1.3; }
+#m1 > *:not(.label):not(.foot):not(.notes):not(.portfolio-link) { zoom:1.3; }
 #dv > *:not(.label):not(.foot):not(.notes) { zoom:1.08; }
 #fin > *:not(.label):not(.foot):not(.notes) { zoom:1.1; }
 .duo { flex:1; }
@@ -411,7 +411,7 @@ body.print .rib polygon, body.still .rib polygon { transform:none !important; an
 #x4 > * { zoom:1.06; }
 #x5 > *:not(.label):not(.foot):not(.notes) { zoom:1.2; }
 #me3 > h2 { zoom:1 !important; font-size:40px; white-space:nowrap; }
-#m1 > *:not(.label):not(.foot):not(.notes) { zoom:1.14; }
+#m1 > *:not(.label):not(.foot):not(.notes):not(.portfolio-link) { zoom:1.14; }
 #fin > h2 { zoom:1 !important; }
 #me2 > *:not(.label):not(.foot):not(.notes) { zoom:1.05; }
 #mom, #x4 { justify-content:center !important; padding-top:60px !important; }
